@@ -73,18 +73,27 @@
                                     <label for="jenis_identitas">Jenis Identitas</label>
                                     <select class="form-select form-select mb-3" id="jenis_identitas" name="jenis_identitas" required>
                                         <option disabled selected>Pilih Jenis Identitas</option>
-                                        <option value="NIK">NIK</option>
+                                        <option value="E-KTP">E-KTP</option>
                                         <option value="SIM">SIM</option>
                                         <option value="KARTU PELAJAR">KARTU PELAJAR</option>
                                     </select>
                                 </div>
                                 <div class="form-group mb-3">
-                                    <label for="nomor_identitas">Nomor Identitas <font color="red">*(NIK/SIM/NISN/NIM)</font></label>
+                                    <label for="nomor_identitas">Nomor Identitas <font color="red">*(E-KTP/SIM/NISN/NIM)</font></label>
                                     <input type="number" class="form-control" id="nomor_identitas" name="nomor_identitas" placeholder="Enter Nomor Identitas" required>
                                 </div>
                                 <div class="form-group mb-3">
                                     <label for=keperluan">Keperluan</label>
-                                    <input type="text" class="form-control" id="keperluan" name="keperluan" placeholder="Enter Keperluan" required>
+                                    <select class="form-select form-select mb-3" id="keperluan" name="keperluan" required>
+                                        <option disabled selected>Pilih Jenis Identitas</option>
+                                        <option value="Magang">Magang</option>
+                                        <option value="Meminjam buku">Meminjam buku</option>
+                                        <option value="Mengembalikan buku">Mengembalikan buku</option>
+                                        <option value="Membaca">Membaca</option>
+                                        <option value="Kerja kelompok">Kerja kelompok</option>
+                                        <option value="Mengerjakan pr">Mengerjakan pr</option>
+                                        <option value="Berkunjung">Berkunjung</option>
+                                    </select>
                                 </div>
                                 <br>
                                 <div class="d-grid gap-2">
