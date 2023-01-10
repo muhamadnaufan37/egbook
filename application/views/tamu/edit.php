@@ -57,14 +57,14 @@
                                         <option <?php if ($edit['jenis_identitas'] == "SIM") {
                                                     echo 'selected';
                                                 } ?> value="SIM">SIM</option>
-                                        <option <?php if ($edit['jenis_identitas'] == "NIK") {
+                                        <option <?php if ($edit['jenis_identitas'] == "E-KTP") {
                                                     echo 'selected';
-                                                } ?> value="NIK">NIK</option>
+                                                } ?> value="E-KTP">E-KTP</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="created_at">Tanggal Dibuat</label>
-                                    <input type="text" class="form-control" id="created_at" name="created_at" value="<?= $edit['created_at']; ?>" disabled>
+                                    <input type="text" class="form-control" id="created_at" name="created_at" value="<?= $edit['created_at']; ?>">
                                 </div>
 
                                 <div class="card-footer">

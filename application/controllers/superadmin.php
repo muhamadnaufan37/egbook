@@ -179,6 +179,7 @@ class superadmin extends CI_Controller {
             'jenis_identitas'                    => $p['jenis_identitas'],
             'nomor_identitas'                    => $p['nomor_identitas'],
             'keperluan'                    => $p['keperluan'],
+            'created_at'                    => $p['created_at'],
         ];
 
         $this->db->trans_start();
