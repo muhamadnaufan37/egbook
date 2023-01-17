@@ -40,10 +40,6 @@
                                     <input type="text" class="form-control" id="nama" name="nama" value="<?= $edit['nama']; ?>" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="keperluan">Keperluan</label>
-                                    <input type="text" class="form-control" id="keperluan" name="keperluan" value="<?= $edit['keperluan']; ?>" required>
-                                </div>
-                                <div class="form-group">
                                     <label for="nomor_identitas">nomor_identitas</label>
                                     <input type="number" class="form-control" id="nomor_identitas" name="nomor_identitas" value="<?= $edit['nomor_identitas']; ?>" required>
                                 </div>
@@ -63,8 +59,32 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
+                                    <label for="keperluan">Keperluan</label>
+                                    <select class="form-control" name="keperluan" id="keperluan" required>
+                                        <option value="" selected="" disabled="">--- PILIH ---</option>
+                                        <option <?php if ($edit['keperluan'] == "Magang") {
+                                                    echo 'selected';
+                                                } ?> value="Magang">Magang</option>
+                                        <option <?php if ($edit['keperluan'] == "Meminjam buku") {
+                                                    echo 'selected';
+                                                } ?> value="Meminjam buku">Meminjam buku</option>
+                                        <option <?php if ($edit['keperluan'] == "Mengembalikan buku") {
+                                                    echo 'selected';
+                                                } ?> value="Mengembalikan buku">Mengembalikan buku</option>
+                                        <option <?php if ($edit['keperluan'] == "Membaca") {
+                                                    echo 'selected';
+                                                } ?> value="Membaca">Membaca</option>
+                                        <option <?php if ($edit['keperluan'] == "Kerja kelompok") {
+                                                    echo 'selected';
+                                                } ?> value="Kerja kelompok">Kerja kelompok</option>
+                                        <option <?php if ($edit['keperluan'] == "Mengerjakan Tugas") {
+                                                    echo 'selected';
+                                                } ?> value="Mengerjakan Tugas">Mengerjakan Tugas</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
                                     <label for="created_at">Tanggal Dibuat</label>
-                                    <input type="text" class="form-control" id="created_at" name="created_at" value="<?= $edit['created_at']; ?>">
+                                    <input type="text" class="form-control" id="created_at" name="created_at" value="<?= $edit['created_at']; ?>" readonly>
                                 </div>
 
                                 <div class="card-footer">

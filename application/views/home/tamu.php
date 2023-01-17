@@ -91,8 +91,7 @@
                                         <option value="Mengembalikan buku">Mengembalikan buku</option>
                                         <option value="Membaca">Membaca</option>
                                         <option value="Kerja kelompok">Kerja kelompok</option>
-                                        <option value="Mengerjakan pr">Mengerjakan pr</option>
-                                        <option value="Berkunjung">Berkunjung</option>
+                                        <option value="Mengerjakan Tugas">Mengerjakan Tugas</option>
                                     </select>
                                 </div>
                                 <br>
