@@ -84,7 +84,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="created_at">Tanggal Dibuat</label>
-                                    <input type="text" class="form-control" id="created_at" name="created_at" value="<?= $edit['created_at']; ?>" readonly>
+                                    <input type="text" class="form-control" id="created_at" name="created_at" value="<?= $edit['created_at']; ?>" required>
                                 </div>
 
                                 <div class="card-footer">
