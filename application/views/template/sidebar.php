@@ -25,7 +25,7 @@
                 <li class="nav-header">CORE</li>
                 <li class="nav-item">
                     <?php if ($user['role_id'] == '1') { ?>
-                        <a href="<?php echo base_url('superadmin') ?>" class="nav-link active">
+                        <a href="<?php echo base_url('petugas') ?>" class="nav-link active">
                             <i class="nav-icon fas fa-tachometer-alt"></i>
                             <p>
                                 Dashboard
@@ -47,7 +47,7 @@
                 <?php if ($user['role_id'] == '1') { ?>
                     <li class="nav-header">USER MANAGEMENT</li>
                     <li class="nav-item">
-                        <a href="<?php echo base_url('superadmin/akun') ?>" class="nav-link">
+                        <a href="<?php echo base_url('petugas/akun') ?>" class="nav-link">
                             <i class="nav-icon fas fa-fw fa-user"></i>
                             <p>
                                 Pengguna
@@ -59,7 +59,7 @@
                 <?php if ($user['role_id'] == '1') { ?>
                     <li class="nav-header">ADDONS</li>
                     <li class="nav-item">
-                        <a href="<?php echo base_url('superadmin/tamu') ?>" class="nav-link">
+                        <a href="<?php echo base_url('petugas/tamu') ?>" class="nav-link">
                             <i class="nav-icon fas fa-table"></i>
                             <p>
                                 Kelola Tamu

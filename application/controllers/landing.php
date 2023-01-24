@@ -49,7 +49,7 @@ class landing extends CI_Controller {
                     ];
                     $this->session->set_userdata($data);
                     if ($user['role_id'] == 1) {
-                        redirect('superadmin');
+                        redirect('petugas');
                     }  elseif ($user['role_id'] == 2) {
                         redirect('admin');
                     } else {

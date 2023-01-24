@@ -1,14 +1,14 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class superadmin extends CI_Controller {
+class petugas extends CI_Controller {
 
     public function __construct()
     {
         parent::__construct();
         $this->load->library('form_validation');
         if ($this->session->userdata('role_id') != '1') {
-            $this->session->set_flashdata('message', 'swal("Ops!", "Anda harus login sebagai superadmin", "warning");');
+            $this->session->set_flashdata('message', 'swal("Ops!", "Anda harus login sebagai petugas", "warning");');
             redirect('landing');
         }
     }
@@ -29,7 +29,7 @@ class superadmin extends CI_Controller {
 		$this->load->view('template/meta', $data);
 		$this->load->view('template/navbar');
 		$this->load->view('template/sidebar', $data);
-		$this->load->view('superadmin/index');
+		$this->load->view('petugas/index');
 		$this->load->view('template/footer');
 		$this->load->view('template/js');
 	}
@@ -47,7 +47,7 @@ class superadmin extends CI_Controller {
         $this->load->view('template/meta', $data);
         $this->load->view('template/navbar');
         $this->load->view('template/sidebar');
-        $this->load->view('superadmin/akun/index', $data);
+        $this->load->view('petugas/akun/index', $data);
         $this->load->view('template/footer');
         $this->load->view('template/js');
     }
@@ -66,7 +66,7 @@ class superadmin extends CI_Controller {
             $this->load->view('template/meta', $data);
             $this->load->view('template/navbar');
             $this->load->view('template/sidebar');
-            $this->load->view('superadmin/akun/add', $data);
+            $this->load->view('petugas/akun/add', $data);
             $this->load->view('template/footer');
             $this->load->view('template/js');
         } else {
@@ -82,7 +82,7 @@ class superadmin extends CI_Controller {
 
             $this->db->insert('user', $data);
             $this->session->set_flashdata('message', 'swal("Berhasil!", "Account has been created!", "success");');
-            redirect('superadmin/akun');
+            redirect('petugas/akun');
         }
     }
 
@@ -100,7 +100,7 @@ class superadmin extends CI_Controller {
         $this->load->view('template/meta', $data);
         $this->load->view('template/navbar');
         $this->load->view('template/sidebar');
-        $this->load->view('superadmin/akun/edit', $data);
+        $this->load->view('petugas/akun/edit', $data);
         $this->load->view('template/footer');
         $this->load->view('template/js');
     }
@@ -121,7 +121,7 @@ class superadmin extends CI_Controller {
         $this->db->update('user', $data, ['id' => $p['id']]);
         $this->db->trans_complete();
         $this->session->set_flashdata('message', 'swal("Berhasil!", "data has been updated!", "success");');
-        redirect('superadmin/akun');
+        redirect('petugas/akun');
     }
 
     public function delete_akun($id)
@@ -130,7 +130,7 @@ class superadmin extends CI_Controller {
         $this->db->delete('user', ['id' => $id]);
         $this->db->trans_complete();
         $this->session->set_flashdata('message', 'swal("Berhasil!", "Data has been deleted!", "success");');
-        redirect('superadmin/akun');
+        redirect('petugas/akun');
     }
 
     public function tamu()
@@ -186,7 +186,7 @@ class superadmin extends CI_Controller {
         $this->db->update('tamu', $data, ['id_tamu' => $p['id_tamu']]);
         $this->db->trans_complete();
         $this->session->set_flashdata('message', 'swal("Berhasil!", "data has been updated!", "success");');
-        redirect('superadmin/tamu');
+        redirect('petugas/tamu');
     }
 
     public function delete_tamu($id_tamu)
@@ -195,6 +195,6 @@ class superadmin extends CI_Controller {
         $this->db->delete('tamu', ['id_tamu' => $id_tamu]);
         $this->db->trans_complete();
         $this->session->set_flashdata('message', 'swal("Berhasil!", "Data has been deleted!", "success");');
-        redirect('superadmin/tamu');
+        redirect('petugas/tamu');
     }
 }

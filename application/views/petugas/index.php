@@ -9,7 +9,7 @@
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="<?php echo base_url('superadmin') ?>">Home</a></li>
+                        <li class="breadcrumb-item"><a href="<?php echo base_url('petugas') ?>">Home</a></li>
                         <li class="breadcrumb-item active">Dashboard v1</li>
                     </ol>
                 </div><!-- /.col -->
@@ -26,7 +26,7 @@
                 <div class="col-sm-12">
                     <div class="alert alert-info alert-dismissible">
                         <div class="card-body pad table-responsive">
-                            Selamat datang <b><?= $user['nama']; ?></b>, saat ini anda login menggunakan akun <b><?= ($user['role_id'] == "1") ? 'Superadmin' : '<a class="text-muted">Tidak ada title</a>'; ?></b>.
+                            Selamat datang <b><?= $user['nama']; ?></b>, saat ini anda login menggunakan akun <b><?= ($user['role_id'] == "1") ? 'petugas' : '<a class="text-muted">Tidak ada title</a>'; ?></b>.
                         </div>
                     </div>
                 </div>

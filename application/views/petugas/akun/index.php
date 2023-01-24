@@ -8,7 +8,7 @@
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="<?php echo base_url('superadmin') ?>">Home</a></li>
+                        <li class="breadcrumb-item"><a href="<?php echo base_url('petugas') ?>">Home</a></li>
                         <li class="breadcrumb-item active"><?php echo $page_title ?></li>
                     </ol>
                 </div>
@@ -20,7 +20,7 @@
         <div class="card">
             <div class="card-header">
                 <h3 class="card-title">Tabel <?php echo $page_title ?></h3>
-                <a style="float: right;" href="<?php echo base_url('superadmin/add_akun') ?>" class="btn btn-sm btn-success">Tambah data</a>
+                <a style="float: right;" href="<?php echo base_url('petugas/add_akun') ?>" class="btn btn-sm btn-success">Tambah data</a>
             </div>
 
             <div class="card-body">
@@ -44,7 +44,7 @@
                                 <td>
                                     <span>
                                         <?php if ($user['role_id'] == '1') { ?>
-                                            <div type="button" class="btn btn-block btn-danger btn-sm disabled">Superadmin</div>
+                                            <div type="button" class="btn btn-block btn-danger btn-sm disabled">petugas</div>
                                         <?php } ?>
                                     </span>
                                     <span>
@@ -72,8 +72,8 @@
                                 </td>
                                 <td><?= $user['created_at']; ?></td>
                                 <td>
-                                    <a type="button" href="<?= base_url('superadmin/edit_akun/?id='.$user['id']) ?>" class="btn btn-warning btn-sm"><span class="fas fa-edit"></span></a>
-                                    <a type="button" onclick="return confirm('apakah anda yakin ingin menghapus data ini?')" href="<?= base_url('superadmin/delete_akun/' . $user['id']) ?>" class="btn btn-danger btn-sm"><span class="fas fa-trash"></span></a>
+                                    <a type="button" href="<?= base_url('petugas/edit_akun/?id='.$user['id']) ?>" class="btn btn-warning btn-sm"><span class="fas fa-edit"></span></a>
+                                    <a type="button" onclick="return confirm('apakah anda yakin ingin menghapus data ini?')" href="<?= base_url('petugas/delete_akun/' . $user['id']) ?>" class="btn btn-danger btn-sm"><span class="fas fa-trash"></span></a>
                                 </td>
                             </tr>
                         <?php } ?>

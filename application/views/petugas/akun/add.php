@@ -8,7 +8,7 @@
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="<?php echo base_url('superadmin') ?>">Home</a></li>
+                        <li class="breadcrumb-item"><a href="<?php echo base_url('petugas') ?>">Home</a></li>
                         <li class="breadcrumb-item active"><?php echo $page_title ?></li>
                     </ol>
                 </div>
@@ -28,7 +28,7 @@
                             <h3 class="card-title"><?php echo $page_title ?></h3>
                         </div>
 
-                        <form method="post" action="<?php echo base_url('superadmin/add_akun'); ?>" enctype="multipart/form-data">
+                        <form method="post" action="<?php echo base_url('petugas/add_akun'); ?>" enctype="multipart/form-data">
                             <div class="card-body">
                                 <div class="form-group">
                                     <label for="nama">Nama</label>
@@ -50,7 +50,7 @@
                                     <label>Level Akun Users</label>
                                     <select class="form-control" name="role_id" id="role_id" required>
                                         <option value="" selected="" disabled="">--- PILIH ---</option>
-                                        <option value="1">Superadmin</option>
+                                        <option value="1">petugas</option>
                                         <option value="2">Admin Koordinator</option>
                                     </select>
                                 </div>
@@ -64,7 +64,7 @@
                                 </div>
 
                                 <div class="card-footer">
-                                    <a type="button" href="<?php echo base_url('superadmin/akun') ?>" class="btn btn-danger">Kembali</a>
+                                    <a type="button" href="<?php echo base_url('petugas/akun') ?>" class="btn btn-danger">Kembali</a>
                                     <button type="submit" class="btn btn-primary">Simpan</button>
                                 </div>
                         </form>

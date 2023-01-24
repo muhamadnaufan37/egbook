@@ -8,7 +8,7 @@
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="<?php echo base_url('superadmin') ?>">Home</a></li>
+                        <li class="breadcrumb-item"><a href="<?php echo base_url('petugas') ?>">Home</a></li>
                         <li class="breadcrumb-item active"><?php echo $page_title ?></li>
                     </ol>
                 </div>
@@ -29,7 +29,7 @@
                             <a style="float: right;">
                                 <span>
                                     <?php if ($edit['role_id'] == '1') { ?>
-                                        <div type="button" class="btn btn-block btn-danger btn-sm disabled">Superadmin</div>
+                                        <div type="button" class="btn btn-block btn-danger btn-sm disabled">petugas</div>
                                     <?php } ?>
                                     <?php if ($edit['role_id'] == '2') { ?>
                                         <div type="button" class="btn btn-block btn-warning btn-sm disabled">Admin Koordinator</div>
@@ -42,7 +42,7 @@
                         </div>
 
 
-                        <form method="post" action="<?php echo base_url('superadmin/update_akun/?id=' . $edit['id']); ?>" enctype="multipart/form-data">
+                        <form method="post" action="<?php echo base_url('petugas/update_akun/?id=' . $edit['id']); ?>" enctype="multipart/form-data">
                             <div class="card-body">
                                 <div class="form-group">
                                     <label for="id">Identitan Akun Users</label>
@@ -70,7 +70,7 @@
                                         <option value="" selected="" disabled="">--- PILIH ---</option>
                                         <option <?php if ($edit['role_id'] == "1") {
                                                     echo 'selected';
-                                                } ?> value="1">Superadmin</option>
+                                                } ?> value="1">petugas</option>
                                         <option <?php if ($edit['role_id'] == "2") {
                                                     echo 'selected';
                                                 } ?> value="2">Admin Koordinator</option>
@@ -94,7 +94,7 @@
                                 </div>
 
                                 <div class="card-footer">
-                                    <a type="button" href="<?php echo base_url('superadmin/akun') ?>" class="btn btn-danger">Kembali</a>
+                                    <a type="button" href="<?php echo base_url('petugas/akun') ?>" class="btn btn-danger">Kembali</a>
                                     <button type="submit" class="btn btn-primary">Simpan</button>
                                 </div>
                         </form>

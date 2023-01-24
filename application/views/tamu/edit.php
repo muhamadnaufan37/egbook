@@ -8,7 +8,7 @@
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="<?php echo base_url('superadmin') ?>">Home</a></li>
+                        <li class="breadcrumb-item"><a href="<?php echo base_url('petugas') ?>">Home</a></li>
                         <li class="breadcrumb-item active"><?php echo $page_title ?></li>
                     </ol>
                 </div>
@@ -29,7 +29,7 @@
                         </div>
 
 
-                        <form method="post" action="<?php echo base_url('superadmin/update_tamu/?id_tamu=' . $edit['id_tamu']); ?>" enctype="multipart/form-data">
+                        <form method="post" action="<?php echo base_url('petugas/update_tamu/?id_tamu=' . $edit['id_tamu']); ?>" enctype="multipart/form-data">
                             <div class="card-body">
                                 <div class="form-group">
                                     <label for="id_tamu">Identitan Buku tamu</label>
@@ -88,7 +88,7 @@
                                 </div>
 
                                 <div class="card-footer">
-                                    <a type="button" href="<?php echo base_url('superadmin/tamu') ?>" class="btn btn-danger">Kembali</a>
+                                    <a type="button" href="<?php echo base_url('petugas/tamu') ?>" class="btn btn-danger">Kembali</a>
                                     <button type="submit" class="btn btn-primary">Simpan</button>
                                 </div>
                         </form>
