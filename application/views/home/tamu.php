@@ -92,6 +92,7 @@
                                         <option value="Membaca">Membaca</option>
                                         <option value="Kerja kelompok">Kerja kelompok</option>
                                         <option value="Mengerjakan Tugas">Mengerjakan Tugas</option>
+                                        <option value="Keperluan Instansi">Keperluan Instansi</option>
                                     </select>
                                 </div>
                                 <br>
