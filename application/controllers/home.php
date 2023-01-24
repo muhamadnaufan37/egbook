@@ -35,6 +35,7 @@ class home extends CI_Controller {
                 'jenis_identitas' => htmlspecialchars($this->input->post('jenis_identitas', true)),
                 'nomor_identitas' => htmlspecialchars($this->input->post('nomor_identitas', true)),
                 'keperluan' => htmlspecialchars($this->input->post('keperluan', true)),
+                'created_at' => htmlspecialchars($this->input->post('created_at', true)),
             ];
 
             $this->db->insert('tamu', $data);
