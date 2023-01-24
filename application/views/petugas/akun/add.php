@@ -51,7 +51,6 @@
                                     <select class="form-control" name="role_id" id="role_id" required>
                                         <option value="" selected="" disabled="">--- PILIH ---</option>
                                         <option value="1">petugas</option>
-                                        <option value="2">Admin Koordinator</option>
                                     </select>
                                 </div>
                                 <div class="form-group">

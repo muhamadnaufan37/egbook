@@ -71,9 +71,6 @@
                                         <option <?php if ($edit['role_id'] == "1") {
                                                     echo 'selected';
                                                 } ?> value="1">petugas</option>
-                                        <option <?php if ($edit['role_id'] == "2") {
-                                                    echo 'selected';
-                                                } ?> value="2">Admin Koordinator</option>
                                     </select>
                                 </div>
                                 <div class="form-group">

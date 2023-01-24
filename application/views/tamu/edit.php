@@ -80,6 +80,9 @@
                                         <option <?php if ($edit['keperluan'] == "Mengerjakan Tugas") {
                                                     echo 'selected';
                                                 } ?> value="Mengerjakan Tugas">Mengerjakan Tugas</option>
+                                        <option <?php if ($edit['keperluan'] == "Keperluan Instansi") {
+                                                    echo 'selected';
+                                                } ?> value="Keperluan Instansi">Keperluan Instansi</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
